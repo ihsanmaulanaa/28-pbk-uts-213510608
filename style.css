@@ -1,0 +1,89 @@
+.completed {
+    text-decoration: line-through;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: #0f2027; /* fallback for old browsers */
+    background: linear-gradient(to right,#cd9889, #8581e8, #45a8d2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+  }
+
+input[type=text] {
+    flex: 1;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-color: rgb(69, 19, 103);
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#app {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+input[type=submit] {
+    width: 100%;
+    background-color: #04AA6D;
+}
+
+li button {
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+button[type="input"] {
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    background-color: #7e3e90;
+    color: white;
+    cursor: pointer;
+  }
+
+.hapus{
+    color: white;
+    background:rgb(148, 69, 161);
+    cursor: pointer;
+  }
+
+.list-ihsan {
+    margin: 15;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+
+.form_label {
+    font-size: 1.2rem;
+    display: block;
+    transition: all 0.3s;
+    transform: translateY(0rem);
+  }
+
+.form_input {
+    width: 90%;
+    display: block;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+  }
+
+  .form_input:placeholder-shown + 
+  .form_label {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(-4rem);
+    transform: translateY(-4rem);
+  }
